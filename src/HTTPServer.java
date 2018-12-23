@@ -11,7 +11,7 @@ public class HTTPServer {
 		
 		while(true) {
 			try(Socket cli = ser.accept()){
-			String res = "HTTP/1.1 200 OK\r\n\r\n I will put something useful here?";
+			String res = "HTTP/1.1 200 OK\r\n\r\n You just loaded a webpage from Mira's computer.";
 			cli.getOutputStream().write(res.getBytes("UTF-8"));
 			}
 		}
